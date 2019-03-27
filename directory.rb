@@ -4,26 +4,19 @@ def input_students
   puts "To finish, just hit return twice".center(25)
 
   students = []
-
   name = gets.chomp
-
   while !name.empty? do
-
     students << {name: name, cohort: :november}
-    if students.count == 1
-      puts "Now we have #{students.count} student".center(25)
-    else
-      puts "Now we have #{students.count} students".center(25)
-    end
+      if students.count == 1
+        puts "Now we have #{students.count} student".center(25)
+      else
+        puts "Now we have #{students.count} students".center(25)
+      end
     # get another name from the user
     name = gets.chomp
   end
     # return the array of students
     students
-end
-
-def is_nil_or_empty? value
-  value.to_s.empty?
 end
 
 def print_header
