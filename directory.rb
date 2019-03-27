@@ -32,6 +32,9 @@ def print(students)
     puts "#{student[:name]} (#{student[:cohort]} cohort)"
   student_count = student_count + 1
     puts "#{student_count} #{student[:name]} (#{student[:cohort]} cohort)"
+    if student[:name][0] == "D"
+      puts "#{student[:name]} (#{student[:cohort]} cohort)"
+    end
   end
 end
 
