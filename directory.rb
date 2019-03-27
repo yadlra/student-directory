@@ -1,26 +1,14 @@
-students = [
-  {name: "Dr. Hannibal Lecter", cohort: :november, height: 175},
-  {name: "Darth Vader", cohort: :november, height: 167},
-  {name: "Nurse Ratched", cohort: :november, height: 156},
-  {name: "Michael Corleone", cohort: :november, height: 178},
-  {name: "Alex DeLarge", cohort: :november, height: 185},
-  {name: "The Wicked Witch of the West", cohort: :november, height: 167},
-  {name: "Terminator", cohort: :november, height: 192},
-  {name: "Freddy Krueger", cohort: :november, height: 175},
-  {name: "The Joker", cohort: :november, height: 180},
-  {name: "Joffrey Baratheon", cohort: :november, height: 167},
-  {name: "Norman Bates", cohort: :november, height: 176}
-]
+
 def input_students
-  puts "Please eter the names of the students".center(25)
+  puts "Please enter the names of the students".center(25)
   puts "To finish, just hit return twice".center(25)
-  # create an empty array
+
   students = []
-  # get the first name
+
   name = gets.chomp
-  # while the name is not empty, repeat this code
+
   while !name.empty? do
-    # add the student hash to the array
+
     students << {name: name, cohort: :november}
     if students.count == 1
       puts "Now we have #{students.count} student".center(25)
@@ -32,6 +20,10 @@ def input_students
   end
     # return the array of students
     students
+end
+
+def is_nil_or_empty? value
+  value.to_s.empty?
 end
 
 def print_header
@@ -53,7 +45,22 @@ def print_footer(students)
 end
 
 students = input_students
-# nothing happens until we call methods
 print_header
 print(students)
 print_footer(students)
+
+=begin
+students = [
+  {name: "Dr. Hannibal Lecter", cohort: :november, height: 175},
+  {name: "Darth Vader", cohort: :november, height: 167},
+  {name: "Nurse Ratched", cohort: :november, height: 156},
+  {name: "Michael Corleone", cohort: :november, height: 178},
+  {name: "Alex DeLarge", cohort: :november, height: 185},
+  {name: "The Wicked Witch of the West", cohort: :november, height: 167},
+  {name: "Terminator", cohort: :november, height: 192},
+  {name: "Freddy Krueger", cohort: :november, height: 175},
+  {name: "The Joker", cohort: :november, height: 180},
+  {name: "Joffrey Baratheon", cohort: :november, height: 167},
+  {name: "Norman Bates", cohort: :november, height: 176}
+]
+=end
