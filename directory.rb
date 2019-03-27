@@ -1,3 +1,16 @@
+students = [
+  {name: "Dr. Hannibal Lecter", cohort: :november, height: 175},
+  {name: "Darth Vader", cohort: :november, height: 167},
+  {name: "Nurse Ratched", cohort: :november, height: 156},
+  {name: "Michael Corleone", cohort: :november, height: 178},
+  {name: "Alex DeLarge", cohort: :november, height: 185},
+  {name: "The Wicked Witch of the West", cohort: :november, height: 167},
+  {name: "Terminator", cohort: :november, height: 192},
+  {name: "Freddy Krueger", cohort: :november, height: 175},
+  {name: "The Joker", cohort: :november, height: 180},
+  {name: "Joffrey Baratheon", cohort: :november, height: 167},
+  {name: "Norman Bates", cohort: :november, height: 176}
+]
 def input_students
   puts "Please eter the names of the students"
   puts "To finish, just hit return twice"
