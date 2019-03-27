@@ -12,8 +12,8 @@ students = [
   {name: "Norman Bates", cohort: :november, height: 176}
 ]
 def input_students
-  puts "Please eter the names of the students"
-  puts "To finish, just hit return twice"
+  puts "Please eter the names of the students".center(25)
+  puts "To finish, just hit return twice".center(25)
   # create an empty array
   students = []
   # get the first name
@@ -23,9 +23,9 @@ def input_students
     # add the student hash to the array
     students << {name: name, cohort: :november}
     if students.count == 1
-      puts "Now we have #{students.count} student"
+      puts "Now we have #{students.count} student".center(25)
     else
-      puts "Now we have #{students.count} students"
+      puts "Now we have #{students.count} students".center(25)
     end
     # get another name from the user
     name = gets.chomp
@@ -35,21 +35,21 @@ def input_students
 end
 
 def print_header
-  puts "The students of my cohort at Makers Academy"
-  puts "-------------".
+  puts "The students of my cohort at Makers Academy".center(25)
+  puts "-------------".center(25)
 end
 
 def print(students)
   while students.count > 0 do
     students.each do |student|
-      puts "#{student[:name]} (#{student[:cohort]} cohort)"
+      puts "#{student[:name]} (#{student[:cohort]} cohort)".center(25)
     end
     break
   end
 end
 
 def print_footer(students)
-  puts "Overall, we have #{students.count} great students"
+  puts "Overall, we have #{students.count} great students".center(25)
 end
 
 students = input_students
